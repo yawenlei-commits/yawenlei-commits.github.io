@@ -93,6 +93,14 @@
         .award { display: flex; align-items: baseline; gap: 0.5rem; font-size: 0.85rem; color: var(--text-secondary); }
         .award::before { content: '\2726'; color: var(--gold); font-size: 0.7rem; flex-shrink: 0; }
 
+        /* CURRENT RESEARCH */
+        #research { background: var(--surface); }
+        .research-placeholder { display: flex; align-items: center; justify-content: center; background: linear-gradient(140deg, var(--accent-light) 0%, #fff 60%, var(--gold-light) 100%); border: 1px solid var(--border); }
+        .placeholder-content { text-align: center; padding: 1.5rem; }
+        .placeholder-label { font-family: 'Noto Serif Display', serif; font-size: 1rem; font-weight: 600; color: var(--accent); margin-bottom: 0.5rem; letter-spacing: 0.02em; }
+        .placeholder-meta { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-secondary); font-weight: 600; }
+        .research-funding { font-size: 0.88rem; font-style: italic; color: var(--text-secondary); margin-top: 0.5rem; }
+
         /* ARTICLES */
         .article-list { display: flex; flex-direction: column; gap: 1rem; }
         .article-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem 1.5rem; box-shadow: var(--shadow); transition: border-color 0.2s, transform 0.2s; }
@@ -171,6 +179,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="cv.pdf" target="_blank">CV</a></li>
             <li><a href="#books">Books</a></li>
+            <li><a href="#research">Research</a></li>
             <li><a href="#articles">Articles</a></li>
             <li><a href="#teaching">Teaching</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -213,7 +222,7 @@
             <div class="about-text">
                 <p>I am a Professor of Sociology in the Department of Sociology at Harvard University and a Senior Scholar at the Harvard Academy for International and Area Studies. I am also affiliated with several centers at Harvard, including the Fairbank Center for Chinese Studies, the Weatherhead Center for International Affairs, and the Asia Center.</p>
                 <p>I was born and raised in Taiwan. My academic background bridges law and sociology&mdash;I hold an LLM and a JSD from Yale Law School, as well as a PhD in Sociology from the University of Michigan. Following my graduation from Michigan in 2013, I served as a Junior Fellow at the Society of Fellows at Harvard University from 2013 to 2016. In academic year 2018&ndash;2019, I was a visiting professor at Sciences Po in France.</p>
-                <p>My research spans political sociology, the sociology of media and information technologies, law and society, the sociology of work and labor, development, economic sociology, science and technology studies, and China studies, with a primary emphasis on qualitative and comparative methods. I am currently working on projects related to the semiconductor industry and a new phase of globalization, the platform economy, and the application of AI at work.</p>
+                <p>My research spans political sociology, the sociology of media and information technologies, law and society, the sociology of work and labor, development, economic sociology, science and technology studies, and China studies, with a primary emphasis on qualitative and comparative methods.</p>
             </div>
             <div class="info-cards">
                 <div class="info-card"><div class="label">Position</div><div class="value">Professor of Sociology</div></div>
@@ -262,6 +271,22 @@
                     <div class="award">2018 Gordon Hirabayashi Human Rights Book Award, Human Rights Section, ASA</div>
                     <div class="award">2014 ASA Best Dissertation Award</div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="research">
+    <div class="section-inner reveal">
+        <div class="section-header"><div class="section-line"></div><h2>Current Research</h2></div>
+        <div class="book-card">
+            <div class="book-cover">
+                <img src="tsmc-arizona.jpg" alt="TSMC fab in the Arizona desert with saguaro cactus in foreground">
+            </div>
+            <div class="book-info">
+                <h3>Current Book Project</h3>
+                <p style="color: var(--text-secondary); font-size: 0.98rem; margin-bottom: 1rem;">I am working on a book that traces the reconfiguration of the global economic order since around 2018&mdash;a moment many characterize as a turn away from neoliberal globalization toward an emerging post-neoliberal order. This shifting landscape is shaped by intensifying geopolitical tensions, changing patterns of foreign investment, and mounting efforts to secure technological self-reliance. Centered on semiconductor manufacturing, the project follows the relocation of advanced chip production from Taiwan to the United States, while drawing shadow comparisons to parallel developments in Germany and Japan.</p>
+                <p class="research-funding">Supported by the American Academy in Berlin (Berlin Prize Fellowship) and the <a href="https://www.paris-iea.fr/en/fellows/ya-wen-lei-2" target="_blank" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent);">Paris Institute for Advanced Study (FIAS Fellowship)</a>.</p>
             </div>
         </div>
     </div>
